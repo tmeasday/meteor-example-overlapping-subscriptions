@@ -1,0 +1,16 @@
+<head>
+  <title>meteor-test-project</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#with post}}
+  <dl>
+    <dt>Public:</dt><dd>{{publicValue}}</dd>
+    <dt>Hidden:</dt><dd>{{hiddenValue}}</dd>
+  </dl>
+  {{/with}}
+</template>
